@@ -12,8 +12,6 @@ class Post(object):
         self.created_date = date
         self.id = uuid.uuid4().hex if id is None else id
 
-
-
     def save_to_mongo(self):
         Database.insert(collection='posts', data=self.json())
 

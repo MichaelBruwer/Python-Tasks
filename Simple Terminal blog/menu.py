@@ -1,4 +1,8 @@
-class menu(object):
+from database import Database
+from models.blog import Blog
+
+
+class Menu(object):
     def __init__(self):
         self.user = input("enter your name")
         self.user_blog = None
